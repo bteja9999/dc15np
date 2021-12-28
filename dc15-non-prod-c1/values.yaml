@@ -1,0 +1,52 @@
+# Default values for 	dc15-nonprd-c1.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+rsfs:
+  dev:
+    rancherProjectID: "p-86w5p"
+    labels:
+      env: "Dev"
+  shared:
+    rancherProjectID: "p-pqtn9"
+    labels:
+      env: "shared"  
+  labels:
+    line-of-business: "Risk-Solutions"
+    product-line: "Fraud-Solutions"
+    application-code: "rsfs"
+
+cscp:
+  dev:
+    rancherProjectID: "p-2tzxr"
+    labels:
+      env: "Dev"
+  shared:
+    rancherProjectID: "c-qplfs"
+      labels:
+        env: "shared"
+  qa:
+    rancherProjectID: "p-xgq74"
+    labels:
+      env: "QA"
+  perf:
+    rancherProjectID: "p-926wp"
+    labels:
+      env: "Perf"
+  labels:
+    line-of-business: "Communication-Solutions"
+    product-line: "Carrier-Provisioning"
+    application-code: "cscp"
+cmf:
+  dev:
+    rancherProjectID: "p-7mcn7"
+    labels:
+      env: "Dev"
+  labels:
+    line-of-business: "platform-Engineering"
+
+
